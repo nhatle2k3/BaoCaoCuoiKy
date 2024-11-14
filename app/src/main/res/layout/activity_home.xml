@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/userInitialsView"
+                android:layout_width="55dp"
+                android:layout_height="53dp"
+                android:background="@android:color/holo_blue_light"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="32sp" />
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="217dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Đăng Xuất" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lvRoomList"
+            android:layout_width="match_parent"
+            android:layout_height="586dp"
+            android:layout_marginTop="16dp"
+            android:padding="8dp" />
+
+        <Button
+            android:id="@+id/btnDatPhong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đặt phòng" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
